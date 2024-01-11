@@ -1,0 +1,77 @@
+//Answer1
+let grade;
+const marks=95;
+if(marks>90){
+    grade='A grade';
+}else if(marks>70 && marks<=90){
+   grade='B grade';
+}else if(marks>50 && marks<=70){
+   grade='C grade'
+}else{
+   grade='F grade';
+}
+console.log(`Your Grade is: ${grade}` );
+
+//Answer2
+
+const num1=10;
+const num2=25;
+for(let i=num1;i<=num2;i++){
+   console.log(i);
+}
+
+//Answer3
+
+const num=0;
+num>0?console.log("positive):num<0?console.log("negative"):console.log("zero");
+
+//Answer4
+
+comma operator allows us to evaluate multiple expressions in a single statement like declaring multiple variables
+in a single statement using comma operator.
+const a=10,b=20,c=30;
+
+//Answer5
+
+let username="admin";
+let password="12345";
+if(username==="admin" && password==="12345"){
+   console.log("login successful");
+}else{
+   console.log("invalid credentials");
+};
+
+//Answer6
+
+let paymentmethod='credit';
+switch (paymentmethod) {
+   case "credit":
+      console.log("Processing fee for credit payment:2%");
+      break;
+   case "debit":
+      console.log("Processing fee for credit payment:1.5%");
+      break;
+   case "paypal":
+      console.log("Processing fee for credit payment:3%");
+      break;
+   default:
+      console.log("Invalid Payment method");
+   break;
+}
+
+//Answer7
+
+let currenttemperature=32;
+let weathercondition=currenttemperature>30?"Hot":"cold";
+console.log(`Weather Condition is:${weathercondition} `);
+
+//Answer8
+
+let targetnumber=8;
+let sum=0;
+let currentnumber=1;
+do{
+   sum+=currentnumber;
+   currentnumber++;
+}while(currentnumber<=targetnumber);
+console.log(`sum of 1 to ${targetnumber} is:${sum}`);
